@@ -10,6 +10,6 @@ The script uses r base packages, data.table and dplyr and their dependencies.
 - training and test data are combined into one data table.
 - Calculated means and standard deviations are extracted from the table.
 - activities are appropriately labelled
-- The averages of the means and standard deviations are calculated for each measurement for each activity for each subject. 
-- This calculation is put into a data table. 
-- The long datatabl
+- The averages of the means and standard deviations are calculated for each of the extracted means and standard deviations for each activity for each subject. 
+- This calculation is put into a data table and arranged into a long format. 
+- The data table is written to a file.

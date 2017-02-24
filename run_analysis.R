@@ -39,6 +39,7 @@ levels(Alldata$activity) <- activity_names[[2]]
         
 DataSummary <-Alldata %>% arrange(subject,activity) %>% 
         group_by(subject,activity) %>% 
-        summarize_each(funs(mean), -(subject:activity))
+        summarize_each(funs(mean), -(subject:activity)) %>%
+        melt(id=1:2)
 
 write.table(DataSummary,"SummaryData.txt",row.names=FALSE)
